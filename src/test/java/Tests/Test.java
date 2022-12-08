@@ -56,7 +56,7 @@ public class Test {
     }
     @org.testng.annotations.Test (priority = 3)
     public void checkoutProductTest() {
-        Assert.assertTrue(cartPage.isGetCartItemPresented()); //Izbacuje gresku proveriti
+        Assert.assertTrue(cartPage.isGetCartItemPresented());
         Assert.assertTrue(cartPage.isRemoveButtonPresented());
         Assert.assertTrue(cartPage.isContinueShoppingBtnPresented());
         Assert.assertTrue(cartPage.isCheckoutBtnPresented());
@@ -68,7 +68,7 @@ public class Test {
     @org.testng.annotations.Test (priority = 4)
     public void informationFormTest() {
 
-        Assert.assertTrue(checkoutYourInformationPage.isContinueBtnPresented()); //Izbacuje gresku proveriti
+        Assert.assertTrue(checkoutYourInformationPage.isContinueBtnPresented());
         Assert.assertTrue(checkoutYourInformationPage.isCancelBtnPresented());
         checkoutYourInformationPage.checkout("Djordje", "Cvarkov", "21233");
 
@@ -83,7 +83,7 @@ public class Test {
     @org.testng.annotations.Test (priority = 5)
 
     public void completePageTest() {
-        Assert.assertTrue(checkoutCompeletePage.isCompletedMessagePresented()); //Izbacuje gresku proveriti
+        Assert.assertTrue(checkoutCompeletePage.isCompletedMessagePresented());
         checkoutCompeletePage.backToHomePage();
 
         Assert.assertTrue(productPage.isProductsPresented());
